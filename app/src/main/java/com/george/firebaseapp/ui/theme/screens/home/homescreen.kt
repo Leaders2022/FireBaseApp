@@ -42,7 +42,7 @@ fun HomeScreen(navController: NavHostController) {
             color = Color.Red,
             fontFamily = FontFamily.Cursive,
             fontSize = 30.sp)
-        //Image(painter = painterResource(id=R.drawable.fire))
+        Image(painter = painterResource(id=R.drawable.fire), contentDescription = "fire")
 
 
 
