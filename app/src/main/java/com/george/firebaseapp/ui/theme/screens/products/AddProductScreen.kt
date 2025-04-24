@@ -36,6 +36,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.george.firebaseapp.data.productviewmodel
 import com.george.firebaseapp.navigation.ROUTE_VIEW_PRODUCT
 
 
@@ -87,9 +88,9 @@ fun AddProductsScreen(navController: NavHostController) {
 
         Button(onClick = {
             //-----------WRITE THE SAVE LOGIC HERE---------------//
-           // var productRepository = productviewmodel(navController,context)
-            //productRepository.saveProduct(productName.text.trim(),productQuantity.text.trim(),
-                //productPrice.text)
+            var productRepository = productviewmodel(navController,context)
+            productRepository.saveProduct(productName.text.trim(),productQuantity.text.trim(),
+                productPrice.text)
             navController.navigate(ROUTE_VIEW_PRODUCT)
 
 
